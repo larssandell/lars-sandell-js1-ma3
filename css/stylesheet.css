@@ -1,0 +1,39 @@
+body {
+    font-size: 20px;
+}
+ul {
+    display: block;
+}
+.api-list {
+    border: 1px solid black;
+    list-style-type: circle;
+}
+.rawgapi {
+    margin: 0 20%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". center .";
+}
+.loading {
+    grid-area: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #87e6f3, #44c3f5 40%, #fff 34%);
+    background-size: 300% 100%;
+    animation: loading 5s linear infinite;
+}
+
+.error {
+    background-color: red;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0;
+    }
+}
