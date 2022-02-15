@@ -33,6 +33,7 @@ async function getApi() {
     } catch (error) {
         console.log(error, "Could not get API");
         rawgContainer.innerHTML = `<p class="error">Promblems with the API get</p>`;
+        container.innerHTML = "";
     } finally {
         console.log("All done");
     }
