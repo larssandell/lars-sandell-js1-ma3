@@ -33,6 +33,7 @@ async function getApi() {
     } catch (error) {
         console.log(error, "Could not get API");
         // rawgContainer.innerHTML = `<p class="error">Promblems with the API get</p>`;
+        // for å fjerne loader når det skjer en feil.
         document.body.innerHTML = `<p class="error">Promblems with the API get</p>`;
     } finally {
         console.log("All done");
